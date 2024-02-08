@@ -9,9 +9,6 @@ if (hourRate > 40):
     print("El empleado trabajo overtime.")
     print(f"El sueldo a pagar al empleado es {totalPay}")
 
-elif (hourRate > 40):
-    print("El empleado trabajo overtime.")
-
 else:
     totalPay = (hourRate * payRate)
     print(f"El sueldo a pagar al empleado es {totalPay}")
