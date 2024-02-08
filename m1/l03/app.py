@@ -1,14 +1,17 @@
 payRate = float(input("Pago por Hora: ")) 
 hourRate = float(input("Horas trabajadas: "))
 
-overtime = 0
-
-if (hourRate > 40):
+if hourRate > 40:
     overtimeHours = hourRate - 40
-    totalPay = (40 * payRate) + (overtimeHours * (payRate * 2))
-    print("El empleado trabajo overtime.")
-    print(f"El sueldo a pagar al empleado es {totalPay}")
-
+    overtimePay = overtimeHours * (payRate * 2)
+    regularPay = 40 * payRate
+    grossPay = regularPay + overtimePay
+    netPay = grossPay - (grossPay * 0.15)
+    print("El empleado trabajó overtime.")
+    print(f"El sueldo bruto del empleado es {grossPay}")
+    print(f"El sueldo neto del empleado es {netPay}")
 else:
-    totalPay = (hourRate * payRate)
-    print(f"El sueldo a pagar al empleado es {totalPay}")
+    grossPay = hourRate * payRate
+    netPay = grossPay - (grossPay * 0.15)
+    print(f"El sueldo bruto del empleado es {grossPay}")
+    print(f"El sueldo neto del empleado es {netPay}")
