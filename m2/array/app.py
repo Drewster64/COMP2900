@@ -7,3 +7,9 @@ for i in range(1,4):
 
 for i in range(3):
     print(f"Indice {i} - Valor {aNumber[i]}")
+
+for n in aNumber:
+    print(f"Valor {n}")
+
+for i in range(len(aNumber)):
+    print(f"indice {i} - Valor {aNumber[i]}")
