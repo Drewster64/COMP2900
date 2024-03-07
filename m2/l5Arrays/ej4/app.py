@@ -8,7 +8,7 @@ Buscar un elemento en un arreglo:
 numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 #El usuario ingresa el numero que desea buscar
-elemento = int(input("Ingrese el número del 1-15 cuya posicion desea buscar: "))
+elemento = float(input("Ingrese el número del 1-15 cuya posicion desea buscar: "))
 
 posicion = -1
 for i in range(len(numeros)):
