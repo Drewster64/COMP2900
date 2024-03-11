@@ -1,13 +1,12 @@
-# Promediar una lista de números:
-#●	Función: promedio(lista_numeros)
-#●	Parámetro: lista_numeros (lista de números)
-#●	Devuelve: El promedio de la lista de números
-
 def promedio(lista_numeros):
-    # Suma de todos los números en la lista / Calcula la cantidad de números en la lista
-    #divide entre ambos para dar el promedio
-    return sum(lista_numeros) / len(lista_numeros)
+    suma = 0
+    cantidadNumeros = 0
+    for numero in lista_numeros:
+        suma += numero
+        cantidadNumeros += 1
+    return suma / cantidadNumeros
 
-numeros = [3, 7, 10, 16, 22] #Lista de números
-resultado = promedio(numeros) #Llamando a la función para calcular el promedio de la lista de números
+numeros = [3, 7, 10, 16, 22] 
+resultado = promedio(numeros) 
+print("Lista de numeros:", numeros)
 print("El promedio de la lista de números es:", resultado)
