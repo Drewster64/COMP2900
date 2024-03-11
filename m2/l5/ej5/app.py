@@ -4,11 +4,18 @@
 #●	Devuelve: El índice de la primera aparición del elemento en la lista, o -1 si no se encuentra
 
 def buscar_indice(lista, elemento):
-    return lista.index(elemento) if elemento in lista else -1 #método index para encontrar el indice en la lista
+    indice = 0
+    for item in lista:
+        if item == elemento:
+            return indice
+        indice += 1
+    return -1
 
 numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-buscarElemento = int(input("Ingrese el elemento que desea buscar en la lista: "))
+buscarElemento = int(input("Ingrese el elemento que desea buscar en la lista 1-15: "))
 
-#Busca el índice del elemento en la lista utilizando la función
 indice = buscar_indice(numeros, buscarElemento)
-print("El indice de la primera aparición del elemento", buscarElemento, "en la lista es:", indice)
+if indice != -1:
+    print("El índice de la primera aparición del elemento", buscarElemento, "en la lista es:", indice)
+else:
+    print("El elemento", buscarElemento, "no se encuentra en la lista.")
