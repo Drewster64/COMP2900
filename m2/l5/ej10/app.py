@@ -6,17 +6,14 @@
 """
 
 def contar_apariciones_letra(cadena, letra):
-
-    cadenaMin = cadena.lower()
-    letraMin = letra.lower()
-    return cadenaMin.count(letraMin)
-    """
-    Metodo lower convertirá los valores asignados a minusculas para que el programa las reconozca independientemente de si 
-    el usuario las ingresa la cadena de texto con minusculas o mayusculas.
-    Metodo count permitirá contar las mismas dentro de la cadena 
-    """
+    counter = 0
+    for caracter in cadena:
+        if caracter.lower() == letra.lower():
+            counter += 1
+    return counter
 
 cadena = input("Ingrese una cadena de texto: ")
 letra = input("Ingrese la letra que desea buscar: ")
 cantidad = contar_apariciones_letra(cadena, letra)
 print("La cantidad de apariciones de la letra", letra, "en la cadena es:", cantidad)
+
