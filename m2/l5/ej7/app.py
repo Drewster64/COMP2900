@@ -4,12 +4,20 @@
 #●	Devuelve: True si la cadena es un número entero, False si no lo es
 
 def es_numero_entero(cadena):
-    return cadena.isdigit()
-#isdigit() se encarga de verificar si los caracteres del texto son numeros enteros
-# de no ser numero o no ser entero imprimará false
+    for numero in cadena:
+        if numero < '0' or numero > '9':
+            return False
+    return True
+
+def numEntero(cadena):
+    for numero in cadena:
+        if numero < '0' or numero > '9':
+            return False
+    return True
 
 texto = input("Ingrese una cadena de texto: ")
 if es_numero_entero(texto):
     print("TRUE")
 else:
     print("FALSE")
+
