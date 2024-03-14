@@ -14,7 +14,6 @@ counter = 0
 for numero in numeros:
     if numero == elemento:#Se comparan los elmentos de la lista
         posicion = counter
-        break
     counter += 1
 
 if posicion != -1:

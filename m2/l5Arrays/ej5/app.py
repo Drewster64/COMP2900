@@ -14,7 +14,6 @@ counter = 0
 for numero in numeros:
     if numero == deleteNum:
         posicion = counter
-        break
     counter += 1
 
 if posicion != -1: # Verifica si el elemento a eliminar esta en la lista
