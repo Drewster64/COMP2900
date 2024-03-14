@@ -3,5 +3,5 @@ def imprimir_numeros():
     for i in range(1, 11):
         print(i)
         number = i 
-        return number
+    return number
    
