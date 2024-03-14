@@ -3,7 +3,5 @@ def clasificar_numero(num):
         return "Positivo"
     elif num < 0:
         return "Negativo"
-    else: 
+    else:
         return "Cero"
-    
-#Test
