@@ -1,3 +1,4 @@
+# Enfoque 1: usando un ciclo for 
 import timeit
 def search_for(number, numbers):
     for i in range(len(numbers)):
@@ -12,8 +13,9 @@ result = search_for(buscarNumero , numbers)
 tiempo = timeit.timeit(lambda: search_for(buscarNumero, numbers), number=1)
 
 if result == 1:
-    print(f"El número {buscarNumero} se encuentra en la lista.")
+    print(f"El número {buscarNumero} ha sido encontrado en la lista.")
 elif result == -1:
-    print(f"El número {buscarNumero} no se encuentra en la lista.")
+    print(f"El número {buscarNumero} no ha sido encontrado en la lista.")
 
+print('-----------------------------------------------------')
 print("Tiempo tomado:", tiempo, "segundos.")
