@@ -8,7 +8,7 @@ def max_iterativo(lista):
             maximo = numero
     return maximo
 
-lista = [1, 2, 33, 4, 55, 666, 7777, 8000, 900, 100]
+lista = [1, 2, 33, 48964, 55, 666, 7777, 8000, 900, 100]
 maximo = max_iterativo(lista)
 time = timeit.timeit(lambda: max_iterativo(lista), number=1)
 
