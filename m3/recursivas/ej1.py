@@ -9,5 +9,5 @@ def sumaNaturales(n):
     else:
         return n + sumaNaturales(n-1) #Funcion recursiva que se encarga de sumar los numeros naturales, repitiendo el ciclo hasta llegar a 0
     
-n = 7
+n = 12
 print(f"La suma de los primeros {n} números naturales es: {sumaNaturales(n)}")
