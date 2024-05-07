@@ -1,23 +1,23 @@
-import random
-
 def casoMenor():
-    f = open("casoMenor.dat", "w")  
-    for _ in range(1000):
-        numero = random.randint(1, 1000)
-        f.write(f"{numero}\n")
-    f.close()
+    numeros = list(range(1, 1001))
+    
+    with open("casoMenor.dat", "w") as f:
+        for numero in numeros:
+            f.write(f"{numero}\n")
 
 def casoMedio():
-    f = open("casoMedio.dat", "w")
-    for _ in range(50000): 
-        numero = random.randint(1, 100000)
-        f.write(f"{numero}\n")
-    f.close()
+    numeros = list(range(1, 50001))
+    
+    with open("casoMedio.dat", "w") as f:
+        for numero in numeros:
+            f.write(f"{numero}\n")
+
 def casoMayor():
-    f = open("casoMayor.dat", "w")
-    for n in range(100000, 0, -1):
-        f.write(f"{n}\n")
-    f.close()
+    numeros = list(range(100000, 0, -1))
+    
+    with open("casoMayor.dat", "w") as f:
+        for numero in numeros:
+            f.write(f"{numero}\n")
 
 casoMenor()
 casoMedio()
