@@ -13,12 +13,11 @@ def casoMedio():
             f.write(f"{numero}\n")
 
 def casoMayor():
-    numeros = list(range(100000, 0, -1))
+    numeros = list(range(1, 100001))
     
     with open("casoMayor.dat", "w") as f:
         for numero in numeros:
             f.write(f"{numero}\n")
-
 casoMenor()
 casoMedio()
 casoMayor()

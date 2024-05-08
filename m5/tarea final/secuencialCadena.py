@@ -9,7 +9,7 @@ def busquedaSecuencial(lista, objetivo):
     print(f"La palabra '{objetivo}' no se encuentra en la lista.")
     return -1 
 
-lista = ["jose", "balvin", "bicicleta", "carro", "vaso", "laptop", "boligrafo", "piercing"]
+lista = ["jose", "balvin", "bicicleta", "carro", "vaso", "laptop", "boligrafo", "piercing", "Nike", "Malik", "Inter"]
 objetivo = input("Ingrese la palabra (en minusculas) que desea buscar en la lista: ")
 
 resultado = busquedaSecuencial(lista, objetivo)
