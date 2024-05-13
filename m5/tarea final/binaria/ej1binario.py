@@ -20,4 +20,5 @@ resultado = busquedaBinaria(lista, objetivo)
 if resultado != -1:
     print(f"El valor {objetivo} se encuentra en la posición {resultado}.")
 else:
-    print(f"El valor {objetivo} no se encuentra en la lista.")
+    
+    print(f"El valor objetivo no se encuentra en la lista")

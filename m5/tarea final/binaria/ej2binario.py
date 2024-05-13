@@ -21,7 +21,7 @@ def Insercion(lista, valor): #esta funcion se encarga de iterar en la lista busc
             insercion += 1 #al encontrar el valor menor, el numero insertado toma la posicion despues de este, incrementando en 1
     return insercion
 
-lista = [1,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 36]
+lista = [1,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 36]
 objetivo = int(input("Escoja el valor de la lista que desea buscar: "))
 resultado = busquedaBinaria(lista, objetivo)
 
